@@ -1,0 +1,156 @@
+.project-glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  opacity: 0.7;
+  height: 100%;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.project-glass-card:hover {
+  box-shadow: -5px 10px 50px -12px rgba(255, 255, 255, 0.747);
+  backdrop-filter: blur(60%);
+  -webkit-backdrop-filter: blur(20px);
+  opacity: 1;
+}
+
+.gridParent {
+  width: fit-content;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 40px 40px;
+  grid-auto-flow: dense;
+  grid-template-areas:
+    'card1 card2 card3'
+    'card4 card5 card6'
+    'card7 card8 card9 ';
+  transition: all ease 500ms;
+}
+
+.gridChild1 {
+  grid-area: card1;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.gridChild2 {
+  grid-area: card2;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.gridChild3 {
+  grid-area: card3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridChild4 {
+  grid-area: card4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridChild5 {
+  grid-area: card5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridChild6 {
+  grid-area: card6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridChild7 {
+  grid-area: card7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridChild8 {
+  grid-area: card8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridChild9 {
+  grid-area: card9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridParentShowProject {
+  display: grid;
+  height: fit-content;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: max-content;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr min-content min-content 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'card2 card2 card3 card3 card4 card4'
+    'card9 card1 card1 card1 card1 card5'
+    'card9 card1 card1 card1 card1 card5'
+    'card8 card8 card7 card7 card6 card6';
+}
+
+.gridChildShowProject1 {
+  grid-area: card1;
+  height: fit-content;
+}
+
+.gridChildShowProject2 {
+  grid-area: card2;
+}
+
+.gridChildShowProject3 {
+  grid-area: card3;
+}
+
+.gridChildShowProject4 {
+  grid-area: card4;
+}
+
+.gridChildShowProject5 {
+  grid-area: card5;
+  align-self: stretch;
+}
+
+.gridChildShowProject6 {
+  grid-area: card6;
+}
+
+.gridChildShowProject7 {
+  grid-area: card7;
+}
+
+.gridChildShowProject8 {
+  grid-area: card8;
+}
+
+.gridChildShowProject9 {
+  grid-area: card9;
+}
